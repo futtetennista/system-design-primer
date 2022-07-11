@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env sh
 
 generate_from_stdin() {
   outfile=$1
@@ -12,7 +12,7 @@ generate_from_stdin() {
 }
 
 generate_with_solutions () {
-  tmpfile=$(mktemp /tmp/sytem-design-primer-epub-generator.XXX)
+  tmpfile=$(mktemp /tmp/sytem-design-primer-epub-generator.XXXXXX)
 
   cat ./README.md >> $tmpfile
 
